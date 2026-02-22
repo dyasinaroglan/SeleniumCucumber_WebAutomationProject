@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features", // senaryolar nerede?
         glue = "steps", //adımların nerede?
         plugin = "pretty", // nasıl bir rapor, çıktı almak istiyorsun
-        tags = "" // hangi test senaryolarını çalıştırmak istiyorsun?
+        tags = "@yaso1" // hangi test senaryolarını çalıştırmak istiyorsun?
 )
 
 public class RunnerTest {
