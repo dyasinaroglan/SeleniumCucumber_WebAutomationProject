@@ -5,4 +5,3 @@ Feature: Ana Sayfa Fonksiyonları
     Given "https://www.hesapkurdu.com/" hesapkurdu ana sayfasına gidilir
     When ihtiyaç kredisi butonuna tıklanır
     Then İhtiyaç kredisi gidildiği kontrol edilir
-    Then Tarayıcı kapatılır.

@@ -19,7 +19,6 @@ public class HomePageSteps {
 
     @Given("{string} hesapkurdu ana sayfasına gidilir")
     public void goToSite(String url) {
-        DriverManager.setupDriver();
         DriverManager.driver.get(url);
         log.info(url + " sayfasına yönlendiriliyor.");
 
@@ -45,10 +44,5 @@ public class HomePageSteps {
         String actualUrl = DriverManager.driver.getCurrentUrl();
         Assert.assertEquals("https://www.hesapkurdu.com/ihtiyac-kredisi",actualUrl);
         log.info(actualUrl + " sayfasına gidildi.");
-    }
-
-    @Then("Tarayıcı kapatılır.")
-    public void tarayiciKapatlir() {
-        DriverManager.quitDriver();
     }
 }
